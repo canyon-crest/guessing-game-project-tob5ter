@@ -1,0 +1,15 @@
+{
+  "name": "JS Starter",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.live-server"        // Microsoft Live Preview
+      ],
+      "settings": {
+        "livePreview.server.keepAlive": true,
+        "livePreview.defaultPreviewPath": "index.html"
+      }
+    }
+  }
+}
