@@ -12,9 +12,14 @@
     <input type="radio" name="level" id="m" value="10"><label for="m">Medium</label>
     <input type="radio" name="level" id="h" value="100"><label for="h">Hard</label>
 
-    <button id="playBtn">Play</button>
+  <button id="playBtn" disabled>Play</button>
+
+  <!-- Name input (replaces prompt) -->
+  <label for="nameInput">Your name: </label>
+  <input type="text" id="nameInput" placeholder="Enter your name">
 
     <h3 id="msg">Select a Level</h3>
+  <p id="hint"></p>
     <input type="text" id="guess">
     <button id="guessBtn" disabled>Guess</button>
     <button id="giveUp" disabled>Give Up</button>
@@ -22,6 +27,10 @@
     <h3>Stats</h3>
     <p id="wins">Total wins: 0</p>
     <p id="avgScore">Average Score: </p>
+  <p id="roundTimer">Time: 0.00s</p>
+  <p id="bestTime">Fastest Time: --</p>
+  <p id="totalTime">Total Play Time: 0.00s</p>
+  <p id="avgTime">Average Time: --</p>
 
     <h3>Leaderboard</h3>
     <ol>
