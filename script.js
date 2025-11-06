@@ -132,6 +132,7 @@ function giveUpGame(){
     updateScore();
     reset();
 }
+//checks if the use makes a valid guess or not
 function makeGuess(){
     let userGuess = parseInt(guess.value);
     if(isNaN(userGuess) || userGuess < 1|| userGuess>level){
@@ -139,6 +140,7 @@ function makeGuess(){
         return;
     }
     score++
+    
     if(userGuess === answer){
         // Give a short verdict based on how many guesses they needed
         let verdict;
